@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- <transition name="fade" mode="out-in">
+    <transition name="fade" mode="out-in">
       <Navbar />
-    </transition> -->
+    </transition>
     <div class="container pt-4">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -19,6 +19,11 @@
 
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from '@/components/Navbar'
 
-export default {}
+export default {
+  components: {
+    Navbar
+  }
+}
 </script>
