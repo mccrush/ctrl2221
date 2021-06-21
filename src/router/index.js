@@ -19,7 +19,7 @@ const router = createRouter({
       component: () => import('../views/Admin.vue'),
       // На проде в значение TRUE
       meta: {
-        requiresAuth: false
+        requiresAuth: true
       }
     },
     {
@@ -27,11 +27,11 @@ const router = createRouter({
       name: 'login',
       component: () => import('../views/Login.vue')
     },
-    {
-      path: '/:razdel',
-      name: 'razdel',
-      component: () => import('../views/Razdel.vue')
-    },
+    // {
+    //   path: '/:razdel',
+    //   name: 'razdel',
+    //   component: () => import('../views/Razdel.vue')
+    // },
     {
       path: '/:razdel/:page',
       name: 'page',
@@ -46,7 +46,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  let currentUser = true // auth.currentUser
+  let currentUser = false // auth.currentUser
   let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
   // 3

@@ -6,9 +6,6 @@
           <router-link to="/" class="nav-link">Index</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/razdel" class="nav-link">Razdel</router-link>
-        </li>
-        <li class="nav-item">
           <router-link to="/razdel/page" class="nav-link">Page</router-link>
         </li>
         <li class="nav-item">

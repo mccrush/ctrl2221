@@ -1,14 +1,10 @@
 <template>
   <div>
-    <transition name="fade" mode="out-in">
-      <Navbar />
-    </transition>
+    <Navbar />
+
     <div class="container pt-4">
       <router-view v-slot="{ Component }">
         <component :is="Component" />
-        <!-- <transition name="fade" mode="out-in">
-         
-        </transition> -->
       </router-view>
 
       <!-- <transition name="fade" mode="out-in">
@@ -28,3 +24,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.max-width {
+  max-width: 960px;
+}
+</style>
