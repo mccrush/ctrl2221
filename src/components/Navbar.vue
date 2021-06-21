@@ -5,15 +5,15 @@
         <li class="nav-item">
           <router-link to="/" class="nav-link">Index</router-link>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <router-link to="/razdel" class="nav-link">Razdel</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/razdel/page" class="nav-link">Page</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/about" class="nav-link">About</router-link>
-        </li> -->
+          <router-link to="/razdel/about" class="nav-link">About</router-link>
+        </li>
         <li class="nav-item">
           <router-link to="/login" class="nav-link">Login</router-link>
         </li>

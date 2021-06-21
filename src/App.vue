@@ -5,9 +5,10 @@
     </transition>
     <div class="container pt-4">
       <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component" />
-        </transition>
+        <component :is="Component" />
+        <!-- <transition name="fade" mode="out-in">
+         
+        </transition> -->
       </router-view>
 
       <!-- <transition name="fade" mode="out-in">
