@@ -47,10 +47,16 @@
 
 <script>
 import { Dropdown } from 'bootstrap'
+import napravs from '../data/napravs'
 export default {
-  props: {
-    napravs: {
-      type: Array
+  // props: {
+  //   napravs: {
+  //     type: Array
+  //   }
+  // },
+  data() {
+    return {
+      napravs
     }
   }
 }

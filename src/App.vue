@@ -24,12 +24,7 @@ export default {
   },
   data() {
     return {
-      razdels: ['reshens', 'napravs', 'napravs_vid', 'abouts'],
-      napravs: [
-        { id: '1', title: 'Видео', alias: 'video' },
-        { id: '2', title: 'Интернет', alias: 'internet' },
-        { id: '3', title: 'Охрана', alias: 'ohrana' }
-      ]
+      razdels: ['reshens', 'napravs', 'napravs_vid', 'abouts']
     }
   }
 }
