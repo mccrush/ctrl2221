@@ -30,11 +30,14 @@
     "not dead"
   ],
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
     "vue": "^3.1.1",
     "vue-router": "^4.0.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
     "@vue/compiler-sfc": "^3.1.1"
   }
 }
