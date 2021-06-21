@@ -5,12 +5,32 @@
         <li class="nav-item">
           <router-link to="/" class="nav-link">Index</router-link>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <router-link to="/razdel/page" class="nav-link">Page</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/razdel/about" class="nav-link">About</router-link>
-        </li>
+        </li> -->
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuNapravs"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Направления
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuNapravs">
+            <li v-for="item in napravs" :key="item.id">
+              <router-link :to="'/napravs/' + item.alias" class="nav-link">{{
+                item.title
+              }}</router-link>
+            </li>
+          </ul>
+        </div>
         <li class="nav-item">
           <router-link to="/login" class="nav-link">Login</router-link>
         </li>
@@ -24,3 +44,14 @@
     </div>
   </nav>
 </template>
+
+<script>
+import { Dropdown } from 'bootstrap'
+export default {
+  props: {
+    napravs: {
+      type: Array
+    }
+  }
+}
+</script>
