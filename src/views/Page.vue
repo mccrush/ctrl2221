@@ -1,27 +1,34 @@
 <template>
-  <h1>{{ page.title }}</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque eaque
-    eos cumque libero excepturi culpa! Corrupti quod repudiandae accusantium
-    itaque laborum a aut officiis, numquam laudantium maiores cupiditate eaque?
-  </p>
-  <ul v-if="$route.params.razdel === 'napravs'">
-    <li v-for="item in napravs_vidFiltered" :key="item.id">
-      <router-link :to="'/napravs_vid/' + item.alias">{{
-        item.title
-      }}</router-link>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ page.title }}</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque
+        eaque eos cumque libero excepturi culpa! Corrupti quod repudiandae
+        accusantium itaque laborum a aut officiis, numquam laudantium maiores
+        cupiditate eaque?
+      </p>
+      <ul v-if="$route.params.razdel === 'napravs'">
+        <li v-for="item in napravs_vidFiltered" :key="item.id">
+          <router-link :to="'/napravs_vid/' + item.alias">{{
+            item.title
+          }}</router-link>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
 import napravs from '../data/napravs'
 import napravs_vid from '../data/napravs_vid'
+import abouts from '../data/abouts'
 export default {
   data() {
     return {
       napravs,
-      napravs_vid
+      napravs_vid,
+      abouts
     }
   },
   computed: {
@@ -33,6 +40,12 @@ export default {
           this.napravs_vid.find(
             page => page.alias === this.$route.params.page
           ) || {
+            title: 'Ошибка 404. Страница не найдена'
+          }
+        )
+      } else if (this.$route.params.razdel === 'abouts') {
+        return (
+          this.abouts.find(page => page.alias === this.$route.params.page) || {
             title: 'Ошибка 404. Страница не найдена'
           }
         )
