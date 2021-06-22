@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row ps-2 pe-2">
     <div class="col-12">
       <h1>{{ page.title }}</h1>
       <p>

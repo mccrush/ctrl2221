@@ -78,11 +78,6 @@ import { Dropdown } from 'bootstrap'
 import napravs from '../data/napravs'
 import abouts from '../data/abouts'
 export default {
-  // props: {
-  //   napravs: {
-  //     type: Array
-  //   }
-  // },
   data() {
     return {
       napravs,
