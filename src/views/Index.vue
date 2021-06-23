@@ -8,15 +8,18 @@
         accusantium itaque laborum a aut officiis, numquam laudantium maiores
         cupiditate eaque?
       </p>
+      <Reshens />
       <Napravs />
     </div>
   </div>
 </template>
 
 <script>
+import Reshens from '../components/index/Reshens'
 import Napravs from '../components/index/Napravs'
 export default {
   components: {
+    Reshens,
     Napravs
   }
 }

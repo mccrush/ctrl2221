@@ -59,3 +59,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+a:hover,
+a:active {
+  text-decoration: none;
+}
+</style>
