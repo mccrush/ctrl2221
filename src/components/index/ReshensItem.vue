@@ -1,24 +1,14 @@
 <template>
-  <div
-    class="
-      box
-      col-6 col-sm-4 col-xl-4
-      d-inline-block
-      shadow-sm
-      rounded
-      mt-2
-      p-3
-    "
-  >
+  <div class="box d-inline-block shadow-sm rounded mt-2 p-3">
     {{ reshen.title }}
-    <hr />
+    <!-- <hr />
     <router-link
       v-for="item in napravsReshen"
       :key="item.id"
       :to="'/napravs_vid/' + item.alias"
       class="d-block"
       >{{ item.title }}</router-link
-    >
+    > -->
   </div>
 </template>
 

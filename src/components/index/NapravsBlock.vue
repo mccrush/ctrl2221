@@ -18,7 +18,7 @@
       :to="'/napravs/' + item.alias"
     >
       <img
-        :src="'/img/index/' + item.alias + '.svg'"
+        :src="'/img/index/napravs/' + item.alias + '.svg'"
         class="img-napr"
         width="75"
         :alt="item.title"
