@@ -11,6 +11,14 @@
     "
   >
     {{ reshen.title }}
+    <hr />
+    <router-link
+      v-for="item in napravsReshen"
+      :key="item.id"
+      :to="'/napravs_vid/' + item.alias"
+      class="d-block"
+      >{{ item.title }}</router-link
+    >
   </div>
 </template>
 
@@ -25,13 +33,26 @@ export default {
     return {
       napravs_vid
     }
+  },
+  computed: {
+    napravsReshen() {
+      return this.napravs_vid.filter(
+        item => item.reshen.findIndex(resh => resh === this.reshen.alias) != -1
+      )
+    }
   }
 }
 </script>
 
 <style scoped>
 a {
+  color: #212529;
   text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
 }
 
 .box {
