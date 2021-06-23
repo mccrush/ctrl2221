@@ -1,6 +1,6 @@
 <template>
-  <div class="box d-inline-block shadow-sm rounded p-3">
-    <h4>{{ reshen.title }}</h4>
+  <div class="box d-inline-block rounded ps-0 pe-0">
+    <h4 class="h-100 pt-4 ps-3 pe-3">{{ reshen.title }}</h4>
     <!-- <hr />
     <router-link
       v-for="item in napravsReshen"
@@ -46,12 +46,13 @@ a:active {
 }
 
 .box {
-  min-height: 75px;
+  min-height: 90px;
   vertical-align: middle;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .box:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
 }
 </style>
