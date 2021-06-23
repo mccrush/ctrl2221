@@ -4,15 +4,15 @@
     <div class="col-12">
       <div class="row" id="bgset" v-on:mouseout="outRow">
         <Reshens-item :reshen="reshens[0]" class="col-6 border" />
-        <Reshens-item :reshen="reshens[1]" class="col-6 border text-right" />
+        <Reshens-item :reshen="reshens[1]" class="col-6 border text-end" />
         <Reshens-item :reshen="reshens[2]" class="col-4 border" />
         <div class="col-4 border" id="backlogotop"></div>
-        <Reshens-item :reshen="reshens[3]" class="col-4 border" />
+        <Reshens-item :reshen="reshens[3]" class="col-4 border text-end" />
         <Reshens-item :reshen="reshens[4]" class="col-4 border" />
         <div class="col-4 border" id="backlogobot"></div>
-        <Reshens-item :reshen="reshens[5]" class="col-4 border" />
+        <Reshens-item :reshen="reshens[5]" class="col-4 border text-end" />
         <Reshens-item :reshen="reshens[6]" class="col-6 border" />
-        <Reshens-item :reshen="reshens[7]" class="col-6 border" />
+        <Reshens-item :reshen="reshens[7]" class="col-6 border text-end" />
       </div>
     </div>
   </div>

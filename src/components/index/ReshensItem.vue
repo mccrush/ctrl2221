@@ -1,6 +1,6 @@
 <template>
-  <div class="box d-inline-block shadow-sm rounded mt-2 p-3">
-    {{ reshen.title }}
+  <div class="box d-inline-block shadow-sm rounded p-3">
+    <h4>{{ reshen.title }}</h4>
     <!-- <hr />
     <router-link
       v-for="item in napravsReshen"
