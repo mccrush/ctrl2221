@@ -8,19 +8,19 @@
         accusantium itaque laborum a aut officiis, numquam laudantium maiores
         cupiditate eaque?
       </p>
-      <Reshens />
-      <Napravs />
+      <Reshens-block />
+      <Napravs-block />
     </div>
   </div>
 </template>
 
 <script>
-import Reshens from '../components/index/Reshens'
-import Napravs from '../components/index/Napravs'
+import ReshensBlock from '@/components/index/ReshensBlock'
+import NapravsBlock from '@/components/index/NapravsBlock'
 export default {
   components: {
-    Reshens,
-    Napravs
+    ReshensBlock,
+    NapravsBlock
   }
 }
 </script>

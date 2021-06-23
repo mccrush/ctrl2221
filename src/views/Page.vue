@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import napravs from '../data/napravs'
-import napravs_vid from '../data/napravs_vid'
-import abouts from '../data/abouts'
+import napravs from '@/data/napravs'
+import napravs_vid from '@/data/napravs_vid'
+import abouts from '@/data/abouts'
 export default {
   data() {
     return {

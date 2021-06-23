@@ -75,8 +75,8 @@
 
 <script>
 import { Dropdown } from 'bootstrap'
-import napravs from '../data/napravs'
-import abouts from '../data/abouts'
+import napravs from '@/data/napravs'
+import abouts from '@/data/abouts'
 export default {
   data() {
     return {

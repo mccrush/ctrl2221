@@ -74,7 +74,7 @@
   </div>
 </template>
 <script>
-import abouts from '../data/abouts'
+import abouts from '@/data/abouts'
 export default {
   data() {
     return {

@@ -1,26 +1,26 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar-block />
 
     <div class="max-width-780 container bg-white rounded-bottom pt-3">
       <router-view v-slot="{ Component }">
         <component :is="Component" />
       </router-view>
 
-      <Footer />
+      <Footer-block />
     </div>
   </div>
 </template>
 
 <script>
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import NavbarBlock from '@/components/NavbarBlock'
+import FooterBlock from '@/components/FooterBlock'
 
 export default {
   components: {
-    Navbar,
-    Footer
+    NavbarBlock,
+    FooterBlock
   },
   data() {
     return {
