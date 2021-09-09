@@ -1,14 +1,33 @@
 <template>
-  <div class="box d-inline-block rounded ps-0 pe-0">
-    <h4 class="h-100 pt-4 ps-3 pe-3">{{ reshen.title }}</h4>
-    <!-- <hr />
-    <router-link
-      v-for="item in napravsReshen"
-      :key="item.id"
-      :to="'/napravs_vid/' + item.alias"
-      class="d-block"
-      >{{ item.title }}</router-link
-    > -->
+  <div class="box dropdown d-inline-block ps-0 pe-0">
+    <h4
+      class="resh-head h-100 pt-4 ps-3 pe-3"
+      :id="reshen.id"
+      data-bs-toggle="dropdown"
+    >
+      {{ reshen.title }}
+    </h4>
+    <div
+      class="
+        dropdown-menu
+        position-absolute
+        bg-white
+        rounded
+        shadow-sm
+        border-0
+        p-3
+      "
+      :class="{ 'to-right': reshen.pos === 'right' }"
+      :aria-labelledby="reshen.id"
+    >
+      <router-link
+        v-for="item in napravsReshen"
+        :key="item.id"
+        :to="'/napravs_vid/' + item.alias"
+        class="d-block"
+        >{{ item.title }}</router-link
+      >
+    </div>
   </div>
 </template>
 
@@ -52,7 +71,16 @@ a:active {
   transition: 0.3s;
 }
 
-.box:hover {
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
+.to-right {
+  right: 0;
+  text-align: right;
+}
+
+.dropdown-menu {
+  margin-top: -42px;
+}
+
+.dropdown:hover div.dropdown-menu {
+  display: block;
 }
 </style>
